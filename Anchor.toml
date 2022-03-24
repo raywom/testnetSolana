@@ -1,0 +1,17 @@
+[features]
+seeds = false
+[programs.localnet]
+rust_token_js = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "localnet"
+wallet = "/home/sigh/.config/solana/id.json"
+
+[workspace]
+members = ["programs/rust_token_js"]
+
+[scripts]
+test = "yarn run mocha -t 1000000 tests/"
